@@ -4,8 +4,7 @@ use CodeIgniter\Model;
 
 class usuario_Model extends Model
 {
-	protected $table = 'usuarios';
-	protected $primaryKey = 'id_usuario';
-	//protected $allowedFields = ['nombre', 'apellido', 'usuario', 'email', 'pass', 'perfil_id', 'baja', 'created_at'];
-	protected $allowedFields = ['nombre', 'apellido', 'usuario', 'email', 'pass'];
+	protected $table = 'usuarios'; //Es el nombre de la tabla
+	protected $primaryKey = 'id_usuario'; //Identifica la tabla
+	protected $allowedFields = ['nombre', 'apellido', 'usuario', 'email', 'pass', 'perfil_id', 'baja']; //Son todos los campos de la tabla
 }

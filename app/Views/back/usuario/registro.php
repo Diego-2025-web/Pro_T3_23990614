@@ -20,7 +20,7 @@
                     <div class="row mb-3">
                         <div class="col-md-6">
                             <label for="nombre" class="form-label">Nombre/s</label>
-                            <input type="text" class="form-control" placeholder="nombre/s *" id="nombre" required>
+                            <input name="nombre" type="text" class="form-control" placeholder="nombre/s *" id="nombre" required>
              
                            <!--Error-->
                            <?php if($validation -> getError('nombre')) {?>
@@ -32,22 +32,46 @@
                             </div> 
                             <div class="col-md-6">
                                 <label for="apellido" class="form-label">Apellido/s</label>
-                                <input type="text" class="form-control" placeholder="apellido/s *" id="apellido" required>
+                                <input name="apellido" type="text" class="form-control" placeholder="apellido/s *" id="apellido" required>
+                                <!-- Error -->
+                            <?php if ($validation->getError('apellido')) {?>
+                                <div class='alert alert-danger mt-2'>
+                                    <?= $error = $validation->getError('apellido'); ?>
+                                </div>
+                            <?php }?>
                             </div>
                         </div>
                             <div class="mb-3">
                                 <label for="usuario" class="form-label">Usuario</label>
-                                <input type="text" class="form-control" placeholder="usuario *" id="usuario" required>
+                                <input name="usuario" type="text" class="form-control" placeholder="usuario *" id="usuario" required>
+                                <!-- Error -->
+                            <?php if ($validation->getError('usuario')) {?>
+                                <div class='alert alert-danger mt-2'>
+                                    <?= $error = $validation->getError('usuario'); ?>
+                                </div>
+                            <?php }?>
                             </div>
                            
                             <div class="col-md-4">
                                 <label for="email" class="form-label">Correo Electrónico</label>
-                                <input type="email" class="form-control" placeholder="correo electrónico *" id="email" required>
+                                <input name="email" type="email" class="form-control" placeholder="correo electrónico *" id="email" required>
+                                <!-- Error -->
+                            <?php if ($validation->getError('email')) {?>
+                                <div class='alert alert-danger mt-2'>
+                                    <?= $error = $validation->getError('email'); ?>
+                                </div>
+                            <?php }?>
                             </div>
                         </div>
                             <div class="mb-3">
                                 <label for="contrasena" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" placeholder="contraseña *" id="contrasena" required>
+                                <input name="pass" type="password" class="form-control" placeholder="contraseña *" id="contrasena" required>
+                                <!-- Error -->
+                            <?php if ($validation->getError('pass')) {?>
+                                <div class='alert alert-danger mt-2'>
+                                    <?= $error = $validation->getError('pass'); ?>
+                                </div>
+                            <?php }?>
                             </div>
                            <!-- <div class="d-flex justify-content-evenly">
                                 <input type="submit" class="btn btn-success">Guardar</button>

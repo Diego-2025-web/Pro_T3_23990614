@@ -22,7 +22,7 @@
                             </div>
 
                             <p class="text-center mt-3 mb-0">
-                                ¿No estás registrado? <a href="registro">Registrate aquí</a>
+                                ¿No estás registrado? <a href="registro">Registrate aquí chamigo!</a>
                             </p>
                         </form>
                     </div>

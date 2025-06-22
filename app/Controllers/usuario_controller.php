@@ -1,19 +1,20 @@
- <?php
- namespace App\Controllers;
-  use App\Models\usuario_Model;
-  use CodeIgniter\Controller;
+<?php
+namespace App\Controllers;
+use App\Models\usuario_Model;
+use CodeIgniter\Controller;
  
  class usuario_controller extends Controller{
  
  	public function __construct(){
  			helper(['form', 'url']);
- 	
+ 	}
  	public function create() {
  	
  			$dato['titulo']='Registro';
  			echo view('front/head_view', $dato);
  			echo view('front/navbar_view');
  			echo view('back/usuario/registro');
+ 			echo view('back/usuario/login');
  			echo view('front/footer_view');
  		}
  		
@@ -33,6 +34,7 @@
  				 	echo view('front/head_view',$data);
  				 	echo view('front/navbar_view');
  				 	echo view('back/usuario/registro',['validation' => $this->validator]);
+ 				 	echo view('back/usuario/login');
  				 	echo view('front/footer_view');
  				 } else {
  				 	$formModel->save([

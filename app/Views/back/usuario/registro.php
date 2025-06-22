@@ -49,10 +49,14 @@
                                 <label for="contrasena" class="form-label">Contraseña</label>
                                 <input type="password" class="form-control" placeholder="contraseña *" id="contrasena" required>
                             </div>
-                           <!-- <div class="d-flex justify-content-evenly">-->
+                           <!-- <div class="d-flex justify-content-evenly">
                                 <input type="submit" class="btn btn-success">Guardar</button>
                                 <input type="reset" class="btn btn-danger">Cancelar</button>
                             <!--/div>-->
+                            <div class="d-flex justify-content-evenly">
+                                <button type="submit" class="btn btn-success">Guardar</button>
+                                <button type="reset" class="btn btn-danger">Cancelar</button>
+                            </div>
                         </div>
                     </form>
                 </div>

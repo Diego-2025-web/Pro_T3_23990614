@@ -32,7 +32,7 @@
                 <a class="nav-link active" href="principal">Inicio</a>
             </li>
                 <li class="nav-item">
-                    <a class="nav-item nav-link" href="quienes_somos">Sobre nosotros</a>
+                    <a class="nav-link" href="quienes_somos">Sobre nosotros</a>
       
                 </li>
                 <li class="nav-item">

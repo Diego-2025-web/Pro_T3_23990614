@@ -1,0 +1,54 @@
+Con
+.OLDERS
+
+1 <?php
+namespace AppYControllers;
+Use AppWModelsYusuario_Model;
+use CodelgniterAControlLer;
+
+6 class usuario controller extends ControLLerf
+
+E public function __construct()f
+
+9 helper(['form', 'url*]);
+
+10
+
+11
+
+12 public function create() (
+
+13
+
+14 $dato[ 'titulo']-'Registro";
+
+15 echo view('front/head_view",$dato);] 1
+
+16 echo view('front/nav_view")3
+
+17 echo view("back/usuario/registro');
+
+18 echo view('front/footer_view");
+
+19 J
+
+pl)
+
+21 public function formValidation()
+
+23 S$input = $this->validate([
+
+24 "nombre" => "required|min_length[3]',
+
+25 "apellido' => 'required|min_length[3]|max_length[25]',
+
+26 “usuario' => 'required|min_length[3]',
+
+27 'email' => 'required|min_length[4]|max_length[109]|valid_email|is_unique[
+usuarios.email]',
+
+28 "pass" *required|min_length[3]|max_length[18]"
+
+»
+
+0:52 /19:35 v M3 Y

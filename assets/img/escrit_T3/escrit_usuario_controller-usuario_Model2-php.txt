@@ -1,0 +1,24 @@
+$formModel usuario Model ();
+(I$inmput) (
+$data[ 'titulo']='Registro';
+
+echo view('
+echo view(
+echo view('bac
+
+ont/head_view",$data)
+
+->validatc
+echo view('fror
+J 1
+$formModel->save([
+*nom S ->request->getVar(*nol
+"ape p ->request->getVar('af
+'usuario' ->request->getVar('usuario'),
+“email' ->request->getVar('email'),
+4 password_hash(. ->request->getVar('pass'), PASSWORD_DE
+D;
+session()->setFlashdata('success', 'Usuario r
+
+->response->redirect('/login');
+

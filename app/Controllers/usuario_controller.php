@@ -11,7 +11,7 @@ class usuario_controller extends Controller{
  	
  	public function create() {
  	
- 			$dato['titulo']='Registro';
+ 			$dato['titulo']='registro';
  			echo view('front/head_view', $dato);
  			echo view('front/navbar_view');
  			echo view('back/usuario/registro');
@@ -45,9 +45,9 @@ class usuario_controller extends Controller{
  				 	//password_hash() crea un nuevo hash de contraseña usando un algoritmo de hash de único sentido.
  				 	]);
  				 	
- 				 	//Flashdata funciona solo en redirigir la funbción en el controlador en la vista de carga.
- 				 		session()->setFlashdata('msg', 'Usuario registarado con éxito');
- 				 		return $this->response->redirect('/registro');
+ 				 	//Flashdata funciona solo en redirigir la función en el controlador en la vista de carga.
+ 				 		session()->setflashdata('msg', 'Usuario registarado con éxito');
+ 				 		return $this->response->redirect('login');
  				 	}
  				 }
  			}

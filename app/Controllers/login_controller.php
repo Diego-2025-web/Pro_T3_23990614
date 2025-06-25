@@ -5,7 +5,7 @@ use CodeIgniter\Controller;
 
 class login_controller extends BaseController
 {
-    public function index ()
+    public function index()
     {
         helper(['form', 'url']);
 
@@ -16,7 +16,7 @@ class login_controller extends BaseController
         echo view('front/footer_view');
     }
 
-    public function auth ()
+    public function auth()
     {
         $session = session();
         $model = new usuario_Model();
@@ -41,12 +41,12 @@ class login_controller extends BaseController
                         'id_usuario'     => $data['id_usuario'],
                         'nombre'         => $data['nombre'],
                         'apellido'       => $data['apellido'],
-                        'usuario'        => $data['usuario'
+                        'usuario'        => $data['usuario'],
                         'email'          => $data['email'],
                         'perfil_id'      => $data['perfil_id'],
                         'logged_in'      =>  TRUE
                     ];
-                    //Se cumple la verificacion, inicia session
+                    //Se cumple la verificacion, inicia sesión
                     $session->set($ses_data);
 
                     session()->setFlashdata('msg', '¡¡Bienvenido!!');

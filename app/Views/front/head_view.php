@@ -21,6 +21,7 @@
 	<div class="container">
 	<div class="page-header">
 		 <h1 style="color: blue">Practicando en Talentos Digitales</h1>
+		 <h4>Página pobre pero honrada, no clonada de infames repositorios chipriotas</h4>
 	</div>
 </header>
 

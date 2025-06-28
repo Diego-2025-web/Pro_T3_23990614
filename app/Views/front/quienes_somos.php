@@ -10,7 +10,8 @@
     <div class="col-md-12">
         <h2 class="mb-4 text-primary">¿Quiénes somos?</h2>
         <p class="lead text-muted">
-        Somos una empresa dedicada a la venta de mercenarios, comprometida con brindar calidad, rapidez y seguridad en cada compra.
+        Somos una empresa dedicada a la venta de barcos y mercenarios, comprometida con brindar calidad, rapidez y seguridad en cada compra.
+        Construidos por los mejores carpinteros navales del orbe, nuestros barcos están diseñados para conquistar los mares y traer gloria en la Guerra de Troya.
         </p>
         
         <p class="lead text-muted">
